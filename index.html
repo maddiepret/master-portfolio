@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Maddie's online portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" />
+
+    <!-- HOSTED -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,600italic,300italic,400italic,300,700italic,800italic,800" rel="stylesheet" type="text/css" />
+
+    <!-- LOCAL -->
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- HOSTED -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+
+    <!-- LOCAL -->
+    <script src="scripts/pt.min.js"></script>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/modal.js"></script>
+</head>
+
+<body>
+    <div class="overflow-wrap">
+        <!-- HOME -->
+        <div class="modal-wrap flex">
+            <div class="mask"></div>
+            <div class="modal" id="modal">
+                <div class="carousel-wrap">
+                    <div class="window">
+                        <div id="carousel">
+                            <div class="slide"></div>
+                            <div class="slide"></div>
+                            <div class="slide"></div>
+                        </div>
+                        <i class="mdi mdi-chevron-left" id="prev"></i>
+                        <i class="mdi mdi-chevron-right" id="next"></i>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <div class="title"></div>
+                    <div class="tag"></div>
+                    <div class="detail"></div>
+                    <a href="#" target="_blank">
+                        <div class="button">
+                            <i class="mdi mdi-open-in-new"></i>VIEW SITE
+                        </div>
+                    </a>
+                </div>
+                <i class="close mdi mdi-close"></i>
+            </div>
+        </div>
+
+        <section id="home" class="flex height-fix">
+            <div id="pt" class="canvas"></div>
+            <div class="flex">
+                <div class="text">
+                    Hello, I'm <span class="highlight">Madelein Pretorius</span>.
+                    <br /> I'm a full-stack web developer.
+                </div>
+
+                <div class="button page-link" dest="about">
+                    View my work <i class="mdi mdi-arrow-right"></i>
+                </div>
+
+                <nav class="flex">
+                    <div class="link-wrap">
+                        <div class="active page-link" dest="home">home</div>
+                        <div class="page-link" dest="about">about</div>
+                        <div class="page-link" dest="portfolio">portfolio</div>
+                        <div class="page-link" dest="resume">Resume</div>
+                        <div class="page-link" dest="contact">contact</div>
+                    </div>
+                    <i class="mdi mdi-menu"></i>
+                </nav>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about">
+            <div class="container flex">
+                <div class="header waypoint" data-animation="slide-in-left">
+                    ABOUT
+                </div>
+                <div class="header-bar waypoint" data-animation="slide-in-left" data-delay=".5s"></div>
+
+                <div class="flex row label-wrap">
+                    <div class="flex row-gt-sm">
+                        <div class="flex bullet-wrap ">
+                            <div class="hex-wrap waypoint" data-animation="flip-in-x">
+                                <div class="rounded-social-buttons">
+                                    <div class="social-buttons ">
+                                        <i class="fas fa-palette"></i>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="waypoint" data-animation="fade-in">
+                                <div class="label bold">Designer</div>
+                                <div>
+                                    UI/UX Designer with a passion for designing beautiful and functional user experiences.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex bullet-wrap ">
+                            <div class="hex-wrap waypoint" data-animation="flip-in-x" data-delay=".2s">
+                                <div class="rounded-social-buttons">
+                                    <div class="social-buttons ">
+                                        <i class="fas fa-laptop"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="waypoint" data-animation="fade-in" data-delay=".2s">
+                                <div class="label bold">Responsive</div>
+                                <div>My layouts will work on any device, big or small.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex row-gt-sm">
+                        <div class="flex bullet-wrap ">
+                            <div class="hex-wrap waypoint" data-animation="flip-in-x" data-delay=".4s">
+                                <div class="rounded-social-buttons">
+                                    <div class="social-buttons ">
+                                        <i class="fas fa-file-code"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="waypoint" data-animation="fade-in" data-delay=".4s">
+                                <div class="label bold">&lt;coder&gt;</div>
+                                <div>Front End Developer who focuses on writing clean, elegant and efficient code..</div>
+                            </div>
+                        </div>
+
+                        <div class="flex bullet-wrap ">
+                            <div class="hex-wrap waypoint" data-animation="flip-in-x" data-delay=".6s">
+                                <div class="rounded-social-buttons">
+                                    <div class="social-buttons ">
+                                        <i class="fas fa-rocket"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="waypoint" data-animation="fade-in" data-delay=".6s">
+                                <div class="label bold">Dynamic</div>
+                                <div>
+                                    Websites don't have to be static, I love making pages come to life.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-wrapper flex row-gt-sm">
+                    <div class="flex flex-50-gt-sm waypoint" data-animation="slide-in-left">
+                        <img src="https://pbs.twimg.com/media/CFgNPQhUgAA4SZb.jpg:large" class="me" />
+                        <div class="label bold">Who am I?</div>
+                        <div>
+                            I'm a Front-End Developer from Paarl, South Africa.
+                            <br /> I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences.
+                            <br />
+                            <span class="page-link highlight" dest="contact">Let's make something special.</span
+                >
+              </div>
+            </div>
+
+            <div
+              class="flex flex-50-gt-sm waypoint bars-wrap"
+              data-animation="slide-in-right"
+            >
+              <div class="bar flex">
+                <div class="bar fill" style="width:80%">
+                  <div class="tag bold flex">CSS</div>
+                </div>
+                <span>80%</span>
+                        </div>
+
+                        <div class="bar flex">
+                            <div class="bar fill" style="width:90%">
+                                <div class="tag bold flex">HTML</div>
+                            </div>
+                            <span>90%</span>
+                        </div>
+
+                        <div class="bar flex">
+                            <div class="bar fill" style="width:80%">
+                                <div class="tag bold flex">React</div>
+                            </div>
+                            <span>80%</span>
+                        </div>
+
+                        <div class="bar flex">
+                            <div class="bar fill" style="width:70%">
+                                <div class="tag bold flex">JavaScript</div>
+                            </div>
+                            <span>70%</span>
+                        </div>
+
+                        <div class="bar flex">
+                            <div class="bar fill" style="width:65%">
+                                <div class="tag bold flex">Node.js</div>
+                            </div>
+                            <span>65%</span>
+                        </div>
+
+                        <div class="bar flex">
+                            <div class="bar fill" style="width:65%">
+                                <div class="tag bold flex">Express.js</div>
+                            </div>
+                            <span>65%</span>
+                        </div>
+
+                        <div class="bar flex">
+                            <div class="bar fill" style="width:70%">
+                                <div class="tag bold flex">MongoDB</div>
+                            </div>
+                            <span>70%</span>
+                        </div>
+
+                        <div class="bar flex">
+                            <div class="bar fill" style="width:50%">
+                                <div class="tag bold flex">UI Design</div>
+                            </div>
+                            <span>50%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PORTFOLIO -->
+        <section class="flex" id="portfolio">
+            <div class="header waypoint" data-animation="slide-in-right">
+                PROJECTS
+            </div>
+            <div class="header-bar waypoint" data-animation="slide-in-right" data-delay=".3s"></div>
+
+            <div class="filter-wrap waypoint" data-animation="fade-in">
+                <div class="flex row">
+                    <div class="filter" data-filter=".js">ALL</div>
+                </div>
+                <div class="float-bar">
+                    <div class="flex row">
+                        <div class="filter" data-filter="all">ALL</div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="gallery" class="container flex row wrap waypoint">
+                <div class="mix react" data-my-order="1">
+                    <div>
+                        <div class="card">
+                        </div>
+                        <div class="text">
+                            <div class="bold">Weather App API</div>
+                            <span class="highlight">React.js, Node.js, Express.js</span>
+                        </div>
+                        <a href="https://evening-headland-82075.herokuapp.com/">
+                            <button class="button">Visit page</button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="mix react" data-my-order="1">
+                    <div>
+                        <div class="card">
+                        </div>
+                        <div class="text">
+                            <div class="bold">Tetris Game</div>
+                            <span class="highlight">React.js</span>
+                        </div>
+                        <a href="https://infinite-fjord-45291.herokuapp.com/">
+                            <button class="button">Visit page</button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="mix react" data-my-order="1">
+                    <div>
+                        <div class="card"></div>
+                        <div class="text">
+                            <div class="bold">Itunes Api</div>
+                            <span class="highlight">React.js</span>
+                        </div>
+                        <a href="https://github.com/maddiepret/itunes-api">
+                            <button class="button">Github Repo</button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="mix js" data-my-order="1">
+                    <div>
+                        <div class="card"></div>
+                        <div class="text">
+                            <div class="bold">Car Dealership</div>
+                            <span class="highlight">JavaScript/ HTML/CSS</span>
+                        </div>
+                        <a href="https://github.com/maddiepret/car-dealership">
+                            <button class="button">Github Repo</button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="mix rails" data-my-order="1">
+                    <div>
+                        <div class="card"></div>
+                        <div class="text">
+                            <div class="bold">CahtterBox chat website</div>
+                            <span class="highlight">MERN Stack</span>
+                        </div>
+                        <a href="https://github.com/maddiepret/chatterbox">
+                            <button class="button">Github Repo</button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="mix js" data-my-order="1">
+                    <div>
+                        <div class="card"></div>
+                        <div class="text">
+                            <div class="bold">Make-up store</div>
+                            <span class="highlight">HTML/CSS/Vanilla JS</span>
+                        </div>
+                        <a href="https://github.com/maddiepret/Online-store">
+                            <button class="button">Github Repo</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume -->
+        <section id="resume">
+            <div class="container flex">
+                <div class="header waypoint" data-animation="slide-in-left">View my Resume</div>
+                <div class="header-bar waypoint" data-animation="slide-in-left" data-delay=".5s"></div>
+                <button class="btn">
+                        <a
+                          href="./resume/MadeleinPretorius_CV.pdf"
+                          download="M Pretorius CV.pdf"
+                          target="_blank"
+                        >
+                          <span>
+                            <h3>Download</h3>
+                          </span>
+                        </a>
+                      </button>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact">
+            <div class="container flex">
+                <div class="header waypoint" data-animation="slide-in-left">
+                    CONTACT
+                </div>
+                <div class="header-bar waypoint" data-animation="slide-in-right" data-delay=".25s"></div>
+                <div class="highlight waypoint" data-animation="slide-in-right" data-delay=".5s">
+                    Have a question or want to work together?
+                </div>
+                <form action="mailto:maddie.pret@gmail.com" class="waypoint" data-animation="pop-in" data-delay=".5s" method="post" enctype="text/plain">
+                    <input placeholder="Name" type="text" name="name" required />
+                    <input placeholder="Enter email" type="email" name="email" required />
+                    <textarea placeholder="Your Message" type="text" name="message"></textarea>
+                    <div id="success">
+                        <div>
+                            Your message was sent successfully. Thanks!<span id="close" class="mdi mdi-close"></span>
+                        </div>
+                    </div>
+                    <input class="button" type="submit" id="submit" value="SUBMIT" />
+                </form>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <footer>
+            <div class="rounded-social-buttons">
+                <!-- <a class="social-button facebook" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a> -->
+                <!-- <a class="social-button twitter" href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a> -->
+                <a class="social-button linkedin" href="https://www.linkedin.com/in/madelein-pretorius-a0b7a983/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <!-- <a class="social-button youtube" href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a> -->
+                <a class="social-button instagram" href="https://github.com/maddiepret" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </footer>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+    </div>
+</body>
+
+</html>
